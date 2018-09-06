@@ -4,7 +4,9 @@
   "description": "A React Component that will return html elements with preset styles of grid properties.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build",
+    "build": "npm run build:clean && babel src -d lib",
+    "build:clean": "rm -rf lib/"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,17 @@
   "bugs": {
     "url": "https://github.com/jlindebro/lb-gridview/issues"
   },
-  "homepage": "https://github.com/jlindebro/lb-gridview#readme"
+  "homepage": "https://github.com/jlindebro/lb-gridview#readme",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  },
+  "dependencies": {}
 }
