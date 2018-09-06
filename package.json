@@ -1,6 +1,6 @@
 {
   "name": "lb-gridview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Component that will return html elements with preset styles of grid properties.",
   "main": "lib/index.js",
   "scripts": {

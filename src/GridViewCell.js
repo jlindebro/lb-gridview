@@ -6,6 +6,7 @@ const styles = {
   listStyle: 'none',
   placeSelf: 'center',
   width: '100%',
+  height: '100%',
 }
 
 export class GridViewCell extends Component {
